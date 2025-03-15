@@ -1,22 +1,29 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "Node.js",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm"
+    // Name of the development container (for identification in VSCode)
+    "name": "Node.js",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+    // Specifies the Docker image to use for the container environment
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm", // <-- Comma added here
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+    // Customizations for the VSCode environment within the dev container
+    "customizations": {
+        "vscode": {
+            // Recommended VSCode extensions for this project
+            "extensions": [
+                "esbenp.prettier-vscode",        // Prettier for code formatting
+                "vscode-icons-team.vscode-icons", // Icon pack for better file visuals
+                "wayou.vscode-todo-highlight"    // Highlights TODO/FIXME comments
+            ],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+            // Visual Studio Code settings specific to this container
+            "settings": {
+                "editor.fontSize": 32,                // Increases editor font size (great for presentations)
+                "terminal.integrated.fontSize": 24,   // Enlarges terminal text for readability
+                "editor.wordWrap": "on"               // Enables word wrapping in the editor
+            }
+        }
+    }
 
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    // Uncomment the following to connect as root (useful for permission-related issues)
+    // "remoteUser": "root"
 }

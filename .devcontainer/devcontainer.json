@@ -17,7 +17,7 @@
 
             // Visual Studio Code settings specific to this container
             "settings": {
-                "editor.fontSize": 32,                // Increases editor font size (great for presentations)
+                "editor.fontSize": 26,                // Increases editor font size (great for presentations)
                 "terminal.integrated.fontSize": 24,   // Enlarges terminal text for readability
                 "editor.wordWrap": "on"               // Enables word wrapping in the editor
             }

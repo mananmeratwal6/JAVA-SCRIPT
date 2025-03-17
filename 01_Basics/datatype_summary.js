@@ -52,3 +52,22 @@ mrFunction();//Hello World
 console.log(mrFunction);
 console.log(typeof mrFunction);//object function
 
+
+//    
+        //    copy          reference
+// stack (primitive),heap (non-primitive)
+
+let myEmail = "mananmeratwal5@gmai.comn"
+let myOtherMail = myEmail
+myOtherMail = "pietmana@mail"
+console.log(myEmail);
+console.log(myOtherMail);
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@ypl"
+}
+let userTwo = userOne
+userTwo.email = "usermicro.com"
+console.log(userOne);
+console.log(userTwo);

@@ -20,7 +20,9 @@ console.log(myArr.includes(2))
 console.log(myArr.indexOf(3));
 
 const newArr = myArr.join()
+console.log( newArr);
 console.log(typeof newArr);
+
 
 //slice, splice
 console.log("A ", myArr);

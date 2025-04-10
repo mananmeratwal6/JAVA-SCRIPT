@@ -34,3 +34,31 @@ function loginUserMessage(username="Man"){
 // console.log(loginUserMessage("Manan"));
 console.log(loginUserMessage());//undefined
 
+// function calculateCartPrice(...num1){//... is rest operator combine all value in one or array
+//     return num1
+// }
+// console.log(calculateCartPrice(100,200,500,232));
+function calculateCartPrice(valu1,valu2,...num1){//in these first two values goes in val1 and val2
+    return num1
+}
+console.log(calculateCartPrice(100,200,500,232));
+
+const user = {
+    username :"Manan",
+    price :199 //if prices then it gives undefined  
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+handleObject(user)
+
+
+const myNewArray = [100,2003,300,505]
+
+function returnSecondValue(anyArray){
+    console.log(`sec value is ${anyArray[2]}`);
+    
+}
+returnSecondValue(myNewArray)

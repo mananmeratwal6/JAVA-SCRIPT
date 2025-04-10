@@ -19,7 +19,7 @@ console.log(myArr2);
 console.log(myArr.includes(2))
 console.log(myArr.indexOf(3));
 
-const newArr = myArr.join()
+const newArr = myArr.join()//convert it into a string
 console.log( newArr);
 console.log(typeof newArr);
 

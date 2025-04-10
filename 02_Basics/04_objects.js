@@ -51,5 +51,29 @@ console.log(Object.entries(tinderUser));//convert all keys and values in array i
 console.log(tinderUser.hasOwnProperty('isLogedIn') );
 
 
+const course = {
+    course: "js In hindi",
+    price: "999",
+    courseInstructer: "Manan"
+}
+// course.courseInstructer
 
+// const {courseInstructer} = course
+// console.log(courseInstructer);
+
+const {courseInstructer: instructer} = course
+console.log(instructer);//methods is called destructing
+
+// {//these is not a obj as obj have name these is JSON in these we keys are also string
+//     "name":"Manan",
+//     "coursename":"ja in hindi",
+//     "price" : "free"
+// }
+
+//we can get api also in array format
+[
+    {},
+    {},
+    {}
+]
 

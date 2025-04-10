@@ -64,7 +64,7 @@ const course = {
 const {courseInstructer: instructer} = course
 console.log(instructer);//methods is called destructing
 
-// {//these is not a obj as obj have name these is JSON in these we keys are also string
+// {//these is not a obj as obj have name these is JSON in these we keys are also string or json format
 //     "name":"Manan",
 //     "coursename":"ja in hindi",
 //     "price" : "free"

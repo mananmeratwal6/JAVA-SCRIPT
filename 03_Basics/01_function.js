@@ -10,7 +10,7 @@ function sayMyName(){
 }
 sayMyName();
 
-function addTwoNumber(number1,number2){//no need to give type og parameter
+function addTwoNumber(number1,number2){//no need to give type of parameter
     console.log(number1+number2);//if not a number then it goes on type conversion
     
 }

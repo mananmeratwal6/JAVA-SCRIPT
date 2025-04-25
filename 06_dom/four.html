@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE | DOM</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(lanName){
+        const li=document.createElement('li');
+        li.innerHTML=`${lanName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("pyhton")
+    addLanguage("typescript")
+    function addOptiLanguage(lanName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("pyhton")
+    addLanguage("typescript")//best approch and optimized
+
+    //Edit
+    const secLang=document.querySelector("li:nth-child(2)")
+    // secLang.innerHTML="MOJO"
+    const newli = document.createElement('li')
+    newli.textContent ="mOJO"
+    secLang.replaceWith(newli)
+
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+
+</script>
+</html>
